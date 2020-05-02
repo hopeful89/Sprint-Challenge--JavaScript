@@ -29,14 +29,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+map creates a new array and forEach would modify the given array
 
 2. What is the difference between a function and a method?
+functions are declared/expressed by explictly.  Methods are function that is part of an object property.
 
 3. What is closure?
 
+Closures are used to encapsulate the data that is available to a particular function.  A nested function has access to global/function scoped as well as its own block.  But the function scope cant reach inside the block scope or outside in.
+
 4. Describe the four rules of the 'this' keyword.
 
+1. Use in the global or window object.
+2. implicited uses such as using this inside an object to bind it to the given object.
+3. similar to implicit binding it can be used for constructors.  When you call new Object it will bind the this to the new object.
+4. you can explicitly bind this using .call(object, arg) c for comma arguments.....or .apply(object, [array, args])... and .bind which i honestly havent look at as much.
+
 5. Why do we need super() in an extended class?
+
+in order to inherit the properties of the parent class constuctor you use super().
 
 ## Project Set up
 
